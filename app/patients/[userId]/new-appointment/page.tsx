@@ -1,8 +1,6 @@
-import AppointmentForm from "@/components/forms/AppointmentForm";
-import PatientForm from "@/components/forms/PatientForm";
+import {AppointmentForm} from "@/components/forms/AppointmentForm";
 import { getPatient } from "@/lib/actions/patients.actions";
 import Image from "next/image";
-import Link from "next/link";
 import * as Sentry from '@sentry/nextjs'
 
 export default async function NewAppointment({ params: {userId}}: SearchParamProps) {
